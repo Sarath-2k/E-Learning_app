@@ -3,12 +3,12 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:one_percent/widgets/compiler.dart';
-import 'package:one_percent/widgets/first_list1.dart';
+import 'package:one_percent/widgets/info.dart';
 import 'package:one_percent/widgets/program.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 import 'chapter.dart';
-import 'widgets/applet.dart';
+// import 'widgets/applet.dart';
 import 'widgets/cheats.dart';
 import 'widgets/first_list.dart';
 
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
     CompilerPage(),
     Program(),
     Cheats(),
-    Index(),
+    InforScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -142,14 +142,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       appBar: AppBar(
         toolbarHeight: 100,
-        // flexibleSpace: Container(
-        //   height: 90,
-        //   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        //   child: Row(
-        //     mainAxisAlignment: MainAxisAlignment.end,
-        //     children:
-        //   ),
-        // ),
         title: Text(
           'Java',
           style: TextStyle(color: Colors.white, fontSize: 30),
@@ -195,12 +187,6 @@ class Index extends StatelessWidget {
     Chapter('Your first program', true, 0, 3,'free'),
     Chapter('Storage and basic calculation', false, 0, 6,'free'),
     
-    // Chapter('Decision making', false, 0, 3,"Pro"),
-    // Chapter('Repeating a task', false, 0, 6,"Pro"),
-    // Chapter('Storing similar values', false, 0, 4,"Pro"),
-    // Chapter('Giving input to a program', false, 0, 2,"Pro"),
-    // Chapter('Rebuilding our first program', false, 0, 4,"Pro"),
-    // Chapter('What is object oriented programing', false, 0, 4,"Pro"),
   ];
 
   final List<Chapter> proChapters = [
