@@ -25,7 +25,7 @@ class firstList extends StatelessWidget {
                       margin:EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         borderRadius:BorderRadius.circular(20),
-                        color:Colors.red
+                        color:Colors.redAccent
                       ),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),

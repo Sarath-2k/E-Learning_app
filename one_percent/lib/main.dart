@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:one_percent/widgets/compiler.dart';
 import 'package:one_percent/widgets/info.dart';
-import 'package:one_percent/widgets/program.dart';
+import 'package:one_percent/widgets/programs.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 import 'chapter.dart';
@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List navigationList = [
     Index(),
     CompilerPage(),
-    Program(),
+    Programs(),
     Cheats(),
     InforScreen(),
   ];
@@ -234,7 +234,27 @@ class Index extends StatelessWidget {
               child: firstList(
                 chapter: proChapters,
               ),
-            )
+            ),
+            Card(
+              borderOnForeground: true,
+              color: Colors.blue,
+              elevation: 2,
+              margin: EdgeInsets.all(28),
+              child:Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ListTile(
+                    isThreeLine: true,
+                    title:Text("Completion Text"),
+                    subtitle: Text("Let's Check What You Have Learned So Far"),
+                  ),
+                  ButtonBar(
+                    children: [ 
+                      GestureDetector(child: Text("oyayaya")),
+                    ],
+                  )
+                ],) ,
+              )
           ],
         ),
       ),
